@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_URL = "http://localhost:5000/api/feedback";
+const API_URL = "https://fb-form-eight.vercel.app/api/feedback";
 
 function App() {
   const [name, setName] = useState("");
