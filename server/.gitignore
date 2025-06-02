@@ -1,0 +1,25 @@
+# Root
+node_modules/
+dist/
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System
+.DS_Store
+Thumbs.db
+
+# Vite / React build output
+client/dist/
+client/node_modules/
+
+# Express / Node build artifacts
+server/node_modules/
+
+# VS Code settings
+.vscode/
