@@ -105,14 +105,14 @@ function App() {
                 placeholder="Admin ID"
                 value={loginId}
                 onChange={(e) => setLoginId(e.target.value)}
-                className="w-full p-2 bg-zinc-400 rounded"
+                className="w-full p-2 bg-zinc-50 rounded"
               />
               <input
                 type="password"
                 placeholder="Password"
                 value={loginPass}
                 onChange={(e) => setLoginPass(e.target.value)}
-                className="w-full p-2 bg-zinc-400 rounded"
+                className="w-full p-2 bg-zinc-50 rounded"
               />
               <button type="submit" className="w-full py-2 bg-gray-800 text-white rounded">
                 Login as Admin
