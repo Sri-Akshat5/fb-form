@@ -49,15 +49,14 @@ function App() {
 
   // Handle admin login
   const handleLogin = (e) => {
-    e.preventDefault();
-    if (loginId === "admin" && loginPass === "admin") {
-      setIsAdmin(true);
-      setLoginId("");
-      setLoginPass("");
-    } else {
-      alert("Invalid admin credentials");
-    }
-  };
+  e.preventDefault();
+  if (loginId.toLowerCase() === "admin" && loginPass.toLowerCase() === "admin@123") {
+    setIsAdmin(true);
+  } else {
+    alert("Invalid admin credentials");
+  }
+};
+
 
   // Handle feedback submission
   const handleSubmit = async (e) => {
@@ -133,13 +132,6 @@ function App() {
               required
             >
               <option value="" disabled>Select a teacher</option>
-              <option value="Sarang Jain">Sarang Jain</option>
-              <option value="Abhilasha Singh">Abhilasha Singh</option>
-              <option value="Akshat Srivastava">Akshat Srivastava</option>
-              <option value="Ashraf Khan">Ashraf Khan</option>
-              <option value="Astitwa Kumar">Astitwa Kumar</option>
-              <option value="Nikita Kumari">Nikita Kumari</option>
-              <option value="Parnika Singh">Parnika Singh</option>
               <option value="Sanjeev Kumar Rai">Sanjeev Kumar Rai</option>
               <option value="Ashwani Kumar Chauhan">Ashwani Kumar Chauhan</option>
               <option value="Naveen Yadav">Naveen Yadav</option>
